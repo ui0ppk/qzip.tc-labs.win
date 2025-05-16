@@ -12,9 +12,16 @@
   let addeds: number[] = $state([]);
   count.subscribe(() => {
     const value = Date.now();
-    addeds.push(value);
 
-    setTimeout(() => addeds.splice(addeds.indexOf(value), 1), 1500)
+    // dumb safety feature? maybe.
+    if(addeds.length > 512) {
+      return;
+    }
+    if(addeds.indexOf(value) === -1) {
+      addeds.push(value);
+
+      setTimeout(() => addeds.splice(addeds.indexOf(value), 1), 1500);
+    }
   });
 
   // onMount(() => {
