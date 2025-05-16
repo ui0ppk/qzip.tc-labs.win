@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-    import { fade } from "svelte/transition";
+  import { fade } from "svelte/transition";
   import { source } from "sveltekit-sse";
   const api = source("/api/colon-three");
   let count = api.select("count");

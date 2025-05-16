@@ -1,13 +1,6 @@
-// src/routes/custom-event/+server.js
 import { produce } from 'sveltekit-sse'
 
 let count = 0;
-
-function delay(milliseconds: number) {
-  return new Promise(function run(resolve) {
-    setTimeout(resolve, milliseconds)
-  })
-}
 
 let clients = new Set<{ emit: any }>;
 
