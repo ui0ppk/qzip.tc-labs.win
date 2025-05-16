@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+html {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+
+  height: 100vh;
+
+  font-family: "Source Code Pro", monospace;
+  font-size: 14px;
+  background: #000;
+  color: #fff;
+}
+
+button {
+  appearance: none;
+  
+  &:not(.reset) {
+    background: #1a1a1a;
+    border: #333 solid 1px;
+    color: #fff;
+    border-radius: 3px;
+  }
+}
