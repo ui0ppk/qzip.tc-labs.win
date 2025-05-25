@@ -80,10 +80,13 @@
 
     <div class="addeds">
     <!-- (added) is used as the "key" -->
+    {#if $count !== ""}
+    {@debug addeds}
     {#each addeds as added (added)}
       {@const rnd_pct = () => Math.floor((Math.random() * 100))}
       <div transition:fade class="added" style:left={`${rnd_pct()}%`} style:top={`${rnd_pct()}%`}>+1</div>
     {/each}
+    {/if}
     </div>
   </button>
 </div>
