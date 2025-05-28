@@ -4,6 +4,6 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 	plugins: [sveltekit()],
 	preview: {
-		allowedHosts: ["qzip.tc-labs.win"]
+		allowedHosts: ["qzip.tc-labs.win", "blessed-dassie-vast.ngrok-free.app"]
 	}
 });

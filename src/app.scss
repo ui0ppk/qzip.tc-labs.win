@@ -23,5 +23,34 @@ button {
     border: #333 solid 1px;
     color: #fff;
     border-radius: 3px;
+
+    transition: background 0.15s ease, border 0.2s ease;
+    &:hover {
+      background: #2f2f2f;
+    }
+    &:active, &.active {
+      border-color: #8c5fff;
+      background: #111111;
+    }
   }
+}
+
+input[type="text"], textarea {
+  appearance: none;
+  
+  &:not(.reset) {
+    background: #0c0c0c;
+    border: #333 solid 1px;
+    color: #fff;
+    border-radius: 3px;
+
+    transition: background 0.15s ease, border 0.2s ease;
+    &:focus, &.active {
+      border-color: #8c5fff;
+    }
+  }
+}
+
+:focus {
+  outline: none;
 }

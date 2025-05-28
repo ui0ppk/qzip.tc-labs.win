@@ -1,0 +1,13 @@
+TO FIX!
+- [possible rewrite] SWITCH TO WEBSOCKETS
+- Dont use date.now(), use some otehr way for the messages
+- optimize polling, its very ugly
+- polish the code.
+
+other:
+- add player colors
+- soundboard (?)
+- emoting
+- some other fun stuff
+
+-ooo we should use littlejsengine instaed of html. much less ass
